@@ -28,9 +28,15 @@
      define('TIREPRICE', 100);
      define('OILPRICE', 10);
      define('SPARKPRICE', 4);
+
+     $totalamount = $tireqty * TIREPRICE
+                  + $oilqty * OILPRICE
+                  + $sparkqty * SPARKPRICE;
+     echo "Subtoatal: $".number_format($totalamount,2)."<br/>";
+
+     $taxrate = 0.10; // local slaes tax is 10%
+     $totalamount = $totalamount * (1 + $taxrate);
+     echo "Total including tax: $".number_format($totalamount,2)."</p>";
      ?>
   </body>
 </html>
-
-
-
