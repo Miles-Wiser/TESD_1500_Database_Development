@@ -61,7 +61,7 @@
                       ."\t". $address."\n";
 
        // open file for appending
-       @$fp = fopen("$document_root/../orders/orders.txt", 'ab');
+       @$fp = fopen("$document_root/../orders.txt", 'ab');
 
        if (!$fp) {
          echo "<p><strong> Your order could not be processed at this time.

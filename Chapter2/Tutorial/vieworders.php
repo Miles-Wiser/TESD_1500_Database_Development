@@ -11,7 +11,7 @@
     <h1>Bob's Auto Parts</h1>
     <h2>Customer Orders</h2> 
     <?php
-      @$fp = fopen("$document_root/../orders/orders.txt", 'rb');
+      @$fp = fopen("$document_root/../orders.txt", 'rb');
       flock($fp, LOCK_SH); // lock file for reading
 
       if (!$fp) {
@@ -26,7 +26,15 @@
       }
 
       flock($fp, LOCK_UN); // release read lock
+
+      echo 'Final position of the file pointer is '.(ftell($fp));
+      echo '<br />';
+      rewind($fp);
+      echo 'After rewind, the position is '.(ftell($fp));
+      echo '<br />';
+
       fclose($fp); 
+
     ?>
   </body>
 </html>
