@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mouse's Cookie Fundraiser</title>
+    <style>
+        body {width: 85%; margin: 10px auto;
+             font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;}
+        p {width: 90%; margin: 10px auto; line-height: 1.5em; padding-bottom: 5px;}
+        p::first-letter {font-size: 1.75em; font-weight: 700; float: left; margin-right: 6px;}
+        form {float: left; padding: 10px; display: inline; border: 2px solid gray;
+             background-color: rgb(242, 232, 246);}
+        form > * { margin: 5px 7px;}
+    </style>
+</head>
+
+<body>
+    <h1>Mouse Lost House</h1>
+    
+    <p>Mr. Mouse has lost his house in a terrible incident. His provider, Laura
+        Numeroff, sadly past. Luckily his good friend Felicia Bond has created
+        this fundraiser to help the struggling mammal. Donate a cookie to the
+        starving rodent.
+    </p>
+    <form action="processcookies.php" method="post">
+        <label for="cookieQty">Cookies</label>
+        <input type="text" name="cookieQty" size="1" maxlength="1">
+        <br>
+        <label for="milkQty">Milk</label>
+        <input type="text" name="milkQty" size="1" maxlength="1">
+        <br>
+        <input type="submit" name="submitCookie" value="Donate">
+    </form>
+</body>
+
+</html>
