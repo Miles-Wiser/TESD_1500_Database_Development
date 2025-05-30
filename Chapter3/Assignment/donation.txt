@@ -1,6 +1,12 @@
-16:55, 29th May 2025	1 Cookies	1 Milk	1 Straw	1 Mirror	1 Scissors	1 Broom	1 Nap	1 Book	1 Crayons	1 RefrigeratorQty
-16:57, 29th May 2025	1 Cookies	2 Milk	3 Straw	4 Mirror	5 Scissors	6 Broom	7 Nap	8 Book	9 Crayons	0 RefrigeratorQty
-17:00, 29th May 2025	0 Cookies	0 Milk	0 Straw	0 Mirror	0 Scissors	0 Broom	0 Nap	0 Book	0 Crayons	0 RefrigeratorQty
-17:00, 29th May 2025	0 Cookies	0 Milk	0 Straw	0 Mirror	0 Scissors	0 Broom	0 Nap	0 Book	0 Crayons	0 RefrigeratorQty
-17:02, 29th May 2025	0 Cookies	0 Milk	0 Straw	0 Mirror	0 Scissors	0 Broom	0 Nap	0 Book	0 Crayons	0 RefrigeratorQty
-17:02, 29th May 2025	0 Cookies	0 Milk	0 Straw	0 Mirror	0 Scissors	0 Broom	0 Nap	0 Book	0 Crayons	0 RefrigeratorQty
+14:47, 30th May 2025	1 Cookies	2 Milk	3 Straw
+14:47, 30th May 2025	0 Cookies	7 Milk	2 Straw
+14:48, 30th May 2025	1 Cookies	1 Milk	1 Straw
+14:51, 30th May 2025	9 Cookies	9 Milk	9 Straw
+15:06, 30th May 2025	3 Cookies	2 Milk	2 Straw
+15:07, 30th May 2025	2 Cookies	1 Milk	9 Straw
+15:07, 30th May 2025	0 Cookies	8 Milk	2 Straw
+15:07, 30th May 2025	3 Cookies	1 Milk	3 Straw
+15:07, 30th May 2025	0 Cookies	1 Milk	4 Straw
+15:07, 30th May 2025	1 Cookies	2 Milk	4 Straw
+15:07, 30th May 2025	0 Cookies	2 Milk	1 Straw
+15:07, 30th May 2025	2 Cookies	2 Milk	2 Straw

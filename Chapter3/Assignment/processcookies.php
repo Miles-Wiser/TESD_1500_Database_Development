@@ -3,18 +3,19 @@
     $cookiesQty = $_POST['cookieQty'];
     $milkQty = $_POST['milkQty'];
     $strawQty = $_POST['strawQty'];
-    $mirrorQty = $_POST['mirrorQty'];
-    $scissorsQty = $_POST['scissorsQty'];
-    $broomQty = $_POST['broomQty'];
-    $napQty = $_POST['napQty'];
-    $bookQty = $_POST['bookQty'];
-    $crayonsQty = $_POST['crayonsQty'];
-    $refrigeratorQty = $_POST['refrigeratorQty'];
+    // $mirrorQty = $_POST['mirrorQty'];
+    // $scissorsQty = $_POST['scissorsQty'];
+    // $broomQty = $_POST['broomQty'];
+    // $napQty = $_POST['napQty'];
+    // $bookQty = $_POST['bookQty'];
+    // $crayonsQty = $_POST['crayonsQty'];
+    // $refrigeratorQty = $_POST['refrigeratorQty'];
 
     // All donations go into this array
-    $arrDonation = ['Cookies' => $cookiesQty, 'Milk' => $milkQty, 'Straw' => $strawQty,
-         'Mirror' => $mirrorQty, 'Scissors' => $scissorsQty, 'Broom' => $broomQty,
-         'Nap' => $napQty, 'Book' => $bookQty, 'Crayons' => $crayonsQty, 'RefrigeratorQty' => $refrigeratorQty];
+    // $arrDonation = ['Cookies' => $cookiesQty, 'Milk' => $milkQty, 'Straw' => $strawQty,
+    //      'Mirror' => $mirrorQty, 'Scissors' => $scissorsQty, 'Broom' => $broomQty,
+    //      'Nap' => $napQty, 'Book' => $bookQty, 'Crayons' => $crayonsQty, 'Refrigerator' => $refrigeratorQty];
+    $arrDonation = ['Cookies' => $cookiesQty, 'Milk' => $milkQty, 'Straw' => $strawQty];
 
     // For when items are donated
     $date = date('H:i, jS F Y');
