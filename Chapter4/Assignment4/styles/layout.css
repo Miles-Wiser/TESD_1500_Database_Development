@@ -6,10 +6,11 @@ html {
 
 /* Body Styles */
 body {
-    width: 75%;
+    width: 80%;
     min-height: 100vh;
     margin: 0px auto;
-    background-color: rgb(240, 230, 218);
+    padding-bottom: 25px;
+    background-color: rgb(238, 232, 225);
     border-left: 1px solid rgb(0, 0, 0);
     border-right: 1px solid rgb(0, 0, 0);
     box-shadow: -5px 3px 50px rgb(107, 81, 48);
@@ -34,7 +35,8 @@ header h1 {
 
 header nav {
     padding: 5px 0px;
-    background-color: rgba(248, 216, 221, 0.57);
+    background: linear-gradient(to left, rgba(230, 201, 205, 0.57), rgba(173, 151, 155, 0.57));
+    /* background-color: rgba(248, 216, 221, 0.57); */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -58,6 +60,14 @@ main {
     margin: 10px auto;
 }
 
+main #portrait_sam {
+    margin: 5px 0px 0px 15px;
+    float: right;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+/* H Styles */
 h2 {
     font: italic 2.5em "Apple Chancery";
     margin: 10px auto;
@@ -70,8 +80,33 @@ h3 {
     border-bottom: 2px solid rgb(83, 82, 82)
 }
 
-p {
-    margin-bottom: 10px;
+h4 {
+    font: 1.4em "Apple Chancery";
+    margin: 10px auto;
+}
+
+/* P Styles */
+
+p:not(form p) {
+    width: 90%;
+    margin: 0px auto 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5em;
+}
+
+form p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5em;
+}
+
+/* Form Styles */
+
+form {
+    width: 90%;
+    margin: 0px auto 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form input {
+    margin: 10px auto;
 }
