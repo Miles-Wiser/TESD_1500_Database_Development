@@ -1,0 +1,77 @@
+/* html Styles */
+html {
+    min-height: 100%;
+    background-color: rgb(170, 162, 147);
+}
+
+/* Body Styles */
+body {
+    width: 75%;
+    min-height: 100vh;
+    margin: 0px auto;
+    background-color: rgb(240, 230, 218);
+    border-left: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
+    box-shadow: -5px 3px 50px rgb(107, 81, 48);
+    z-index: -1;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    padding: 10px 0px;
+    background: url("../images/boston-tea-party.jpg") center/100% no-repeat, /* Image Credit: Nathaniel Currier, License: Public Domain */
+                rgb(255, 255, 255);
+    border-bottom: 1px solid black;
+}
+
+header h1 {
+    font: italic bold 5.4em "Apple Chancery";
+    text-shadow: 2px 2px white,
+                 -5px -5px 10px white;
+    text-align: center;
+}
+
+header nav {
+    padding: 5px 0px;
+    background-color: rgba(248, 216, 221, 0.57);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 1.25em;
+    text-shadow: 2px 2px 3px white,
+                 -2px -2px 7px white;
+}
+
+header nav a {
+    color: black;
+    text-decoration: none;
+}
+header nav a:hover {
+    color: rgb(70, 89, 60);
+    text-decoration: none;
+}
+
+/* Main Styles */
+main {
+    width: 90%;
+    margin: 10px auto;
+}
+
+h2 {
+    font: italic 2.5em "Apple Chancery";
+    margin: 10px auto;
+    text-align: center;
+}
+
+h3 {
+    font: 2em "Apple Chancery";
+    margin: 10px auto;
+    border-bottom: 2px solid rgb(83, 82, 82)
+}
+
+p {
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5em;
+}
