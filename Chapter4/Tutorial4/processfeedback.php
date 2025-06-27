@@ -5,8 +5,25 @@ $name = trim($_POST['name']);
 $email = trim($_POST['email']);
 $feedback = trim($_POST['feedback']);
 
+if (preg_match('/^[a-zA-Z0-p_\-\.]+@[a-zA-z0-9\-]+\.[a-zA-Z0-9\-\.]+$/',
+              $email) === 0) {
+  echo "<p>That is not a valid email address.</p>".
+        "<p>please return to the previous page and try again.</p>";
+  exit;
+}
+
 //set up some static information
 $toaddress = "feedback@example.com";
+if (preg_match('/shop|customer service|retail/', $feedback)) {
+  $toaddress = 'retail@example.com';
+} else if (preg_match('/deliver|fulfill/', $feedback)) {
+  $toaddress = 'fulfillment@example.com';
+} else if (preg_match('/bill|account/', $feedback)) {
+  $toaddress = 'accounts@example.com';
+}
+if (preg_match('/bigcustomer\.com/', $email)) {
+  $toaddress = 'bob@example.com';
+}
 
 $subject = "Feedback from web site";
 
@@ -30,5 +47,6 @@ mail($toaddress, $subject, $mailcontent, $fromaddress);
     <h1>Feedback Submitted</h1>
     <p>Your feedback (shown  below) has been sent.</p>
     <p><?php echo nl2br(htmlspecialchars($feedback)); ?> </p>
+    <p><?php echo "Email sent to: $toaddress"; ?></p>
   </body>
 </html>
