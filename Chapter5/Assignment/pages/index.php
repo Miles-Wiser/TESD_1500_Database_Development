@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html>
+<?php
+require 'header.php';
+?>
 
-<title>
+    <main>
+        <h2></h2>
+        <p></p>
+    </main>
 
-</title>
-
-<body>
-    
-</body>
-</html>
+<?php
+require 'footer.php';
+?>
