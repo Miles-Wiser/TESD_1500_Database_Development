@@ -71,6 +71,14 @@ h3 {
     font: italic bold 1.2em "Apple Chancery";
 }
 
+h4 {
+    width: 85%;
+    margin: 5px auto;
+    color: rgb(45, 45, 0);
+    font-size: 0.9em;
+    text-decoration: underline;
+}
+
 /* Paragraph Styles */
 p {
     width: 85%;
@@ -80,4 +88,9 @@ p {
 /* List Styles */
 ul {
     list-style: none;
+}
+
+/* Amendment Styles */
+div#eighteenth {
+    text-decoration: line-through;
 }
