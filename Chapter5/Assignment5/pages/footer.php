@@ -1,9 +1,4 @@
-<footer>
-    <a href="">About</a>
-    <a href="">Careers</a>
-    <a href="">Contact Us</a>
-    <a href="">Support</a>
-</footer>
 
+    <p>Please be kind to this calculator.</p>
+    <p>No checks are in place for entries that are not numbers.</p>
 </body>
-</html>
