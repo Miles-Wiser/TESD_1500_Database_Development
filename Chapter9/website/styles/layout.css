@@ -1,0 +1,22 @@
+header {
+    color: white;
+    background-color: black;
+    padding: 5px 20px;
+    font-size: 1.25em;
+}
+
+table {
+    margin: 20px 10px;
+    border-collapse: collapse;
+    font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+}
+
+th, td {
+    font-size: 1.1em;
+    padding: 7px;
+    border: solid 2px black;
+}
+
+#purchase {
+    text-align: center;
+}
