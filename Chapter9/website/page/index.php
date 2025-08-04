@@ -2,6 +2,7 @@
 require "page.php";
 
 $page = new Page;
+$page->title = "$page->title | Sign In";
 
 
 $page->DisplayHead();
