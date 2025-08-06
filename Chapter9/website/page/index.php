@@ -3,7 +3,8 @@ require "page.php";
 
 $page = new Page;
 $page->title = "$page->title | Sign In";
-
+$page->moreStyle = true;
+$page->style1 = "index.css";
 
 $page->DisplayHead();
 ?>
@@ -19,7 +20,8 @@ $page->DisplayHead();
     </div>
 
     <div class="formRow">
-        <input type="submit" value="Login">
+        <input id="btnLogin" type="submit" value="Login">
+        <a id="forgotPassword" href="#">Forgot Password?</a>
     </div>
 </form>
 <?php

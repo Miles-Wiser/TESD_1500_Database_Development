@@ -1,3 +1,15 @@
+/* Page Styles */
+html {
+    background-image: url("../images/river.jpg");
+}
+
+body {
+    margin: 0 5%;
+    padding: 10px;
+    min-height: 95vh;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
 /* Header Styles */
 header {
     display: grid;
@@ -44,6 +56,25 @@ a:visited {
 }
 a:hover {
     color: rgb(137, 171, 160);
+}
+
+/* Footer Styles */
+footer {
+    display: grid;
+    grid-template: 
+        "a b c" auto;
+    align-items: center;
+    color: white;
+    background-color: rgb(45, 45, 45);
+    padding: 5px 20px;
+    font-size: 0.95em;
+    font-variant: small-caps;
+}
+
+footer .appStore {
+    padding: 5px 10px;
+    border: solid 2px rgb(28, 104, 80);
+    border-radius: 10px;
 }
 
 /* Table Styles */
