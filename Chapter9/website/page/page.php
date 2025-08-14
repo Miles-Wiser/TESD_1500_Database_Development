@@ -27,7 +27,7 @@ class Page {
                         <a href="#">Investments</a>
                         <a href="#">Services</a>
                         <a href="#">Business</a>
-                        <a id="login" href="#">Login</a>
+                        <a id="login" href="index.php">Login</a>
                     </nav>  
                 </header>
         <?php
@@ -38,22 +38,21 @@ class Page {
             <footer>
                 <div class="contact">
                     <p>Service Center</p>
-                    <p>1-818-497-9722</p>
+                    <p><a href="tel:#">1-818-497-9722</a></p>
                 </div>
                 <div class="contact">
                     <p>Routing Number</p>
                     <p>0515 3184 5</p>
                 </div>
-                <div>
+                <div class="contact">
                     <p>Download Our App</p>
                     <div class="appStore">
-                        <img src="../images/pear_market_logo.png" alt="Fictional Pear Market Logo" width="25px">
+                        <a href="#"><img src="../images/pear_market_logo.png" alt="Fictional Pear Market Logo" width="45px"></a>
                         <label>Pear Market</label>
                     </div>
-                    <p>Download Our App</p>
                     <div class="appStore">
-                        <img alt="Google Play Logo">
-                        <label>Google Play</label>
+                        <a href="#"><img alt="Fictional Googol Pause Logo"></a>
+                        <label>Googol Pause</label>
                     </div>
                 </div>
             </footer>
