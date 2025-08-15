@@ -47,11 +47,11 @@ class Page {
                 <div class="contact">
                     <p>Download Our App</p>
                     <div class="appStore">
-                        <a href="#"><img src="../images/pear_market_logo.png" alt="Fictional Pear Market Logo" width="45px"></a>
+                        <a href="#"><img src="../images/pear_market_logo.png" alt="Fictional Company Pear Market Logo" width="45px"></a>
                         <label>Pear Market</label>
                     </div>
                     <div class="appStore">
-                        <a href="#"><img alt="Fictional Googol Pause Logo"></a>
+                        <a href="#"><img alt="Fictional Company Googol Pause Logo"></a>
                         <label>Googol Pause</label>
                     </div>
                 </div>
