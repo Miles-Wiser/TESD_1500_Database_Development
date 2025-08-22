@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Aug 14, 2025 at 11:06 PM
+-- Generation Time: Aug 22, 2025 at 04:31 PM
 -- Server version: 8.0.40
 -- PHP Version: 8.3.14
 
@@ -34,6 +34,16 @@ CREATE TABLE `Books` (
   `Price` float(4,2) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+--
+-- Dumping data for table `Books`
+--
+
+INSERT INTO `Books` (`ISBN`, `Author`, `Title`, `Price`) VALUES
+('0-672-31509-2', 'Pruitt, et al.', 'Teach Yourself GIMP in 24 Hours', 24.99),
+('0-672-31697-8', 'Michael Morgan', 'Java 2 for Professional Developers', 34.99),
+('0-672-31745-1', 'Thomas Down', 'Installing Debian GNU/Linux', 24.99),
+('0-672-31769-9', 'Thomas Schenk', 'Caldera OpenLinux System Administration Unleashed', 49.99);
+
 -- --------------------------------------------------------
 
 --
@@ -44,6 +54,13 @@ CREATE TABLE `Book_Reviews` (
   `ISBN` char(13) NOT NULL,
   `Review` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `Book_Reviews`
+--
+
+INSERT INTO `Book_Reviews` (`ISBN`, `Review`) VALUES
+('0-672-31697-8', 'The Morgan book is clearly written and goes well beyon most of the basic Java books out there.');
 
 -- --------------------------------------------------------
 
@@ -58,6 +75,16 @@ CREATE TABLE `Customers` (
   `City` char(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+--
+-- Dumping data for table `Customers`
+--
+
+INSERT INTO `Customers` (`CustomerID`, `NAME`, `Address`, `City`) VALUES
+(1, 'Julie Smith', '25 Oak Street', 'Airport West'),
+(2, 'Alan Wong', '1/47 Haines Avenue', 'Box Hill'),
+(3, 'Michell Arthur', '357 North Road', 'Yarraville'),
+(4, 'George Napolitano', '177 Melbourne Road', 'Coburg');
+
 -- --------------------------------------------------------
 
 --
@@ -71,6 +98,16 @@ CREATE TABLE `Orders` (
   `Date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+--
+-- Dumping data for table `Orders`
+--
+
+INSERT INTO `Orders` (`OrderID`, `CustomerID`, `Amount`, `Date`) VALUES
+(1, 3, 69.98, '2007-04-02'),
+(2, 1, 49.99, '2007-04-15'),
+(3, 2, 74.98, '2007-04-19'),
+(4, 3, 24.99, '2007-05-01');
+
 -- --------------------------------------------------------
 
 --
@@ -82,6 +119,17 @@ CREATE TABLE `Order_Items` (
   `ISBN` char(13) NOT NULL,
   `Quantity` tinyint UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `Order_Items`
+--
+
+INSERT INTO `Order_Items` (`OrderID`, `ISBN`, `Quantity`) VALUES
+(1, '0-672-31697-8', 2),
+(2, '0-672-31769-9', 1),
+(3, '0-672-31509-2', 1),
+(3, '0-672-31769-9', 1),
+(4, '0-672-31745-1', 3);
 
 --
 -- Indexes for dumped tables
@@ -127,13 +175,13 @@ ALTER TABLE `Order_Items`
 -- AUTO_INCREMENT for table `Customers`
 --
 ALTER TABLE `Customers`
-  MODIFY `CustomerID` int UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `CustomerID` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `Orders`
 --
 ALTER TABLE `Orders`
-  MODIFY `OrderID` int UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `OrderID` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Constraints for dumped tables
