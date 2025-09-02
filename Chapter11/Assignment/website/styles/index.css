@@ -1,0 +1,29 @@
+/* Form Styles */
+form {
+    margin: 100px;
+    padding: 20px;
+    background-color: rgba(45, 45, 45, 0.1);
+    justify-self: center;
+    font-variant: small-caps;
+    border: solid 4px rgb(28, 104, 80);
+}
+
+form label, form input {
+    margin: 10px auto;
+}
+
+#btnLogin:hover {
+    color: rgb(45, 45, 45);
+    background-color: rgb(137, 171, 160);
+}
+
+#forgotPassword {
+    color: black;
+    font-size: 0.9em;
+    text-decoration: underline;
+}
+
+#forgotPassword:hover {
+    color: rgb(9, 60, 44);
+    text-shadow: 2px 0px 5px rgb(137, 171, 160);
+}
