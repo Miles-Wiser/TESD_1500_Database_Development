@@ -12,6 +12,27 @@ $id = $_POST['id'];
 $password = $_POST['password'];
 
 $name = $id;
+
+// Check database
+$db = new mysqli('localhost', 'admin',
+            '12345', 'strandbank');
+        if (mysqli_connect_errno()) {
+            echo '<p>Error: Could not connect to database.<br />
+                  Please try again later.</p>';
+            exit;
+        }
+
+$query = "SELECT Name, AccountID, CheckingBal
+            FROM Accounts WHERE $searchtype = ?";
+$stmt = $db->prepare($query);
+$stmt->bind_param('s', $searchterm);
+$stmt->execute();
+$stmt->store_result();
+
+$stmt->bind_result($name, $accountID, $CheckingBal);
+
+$stmt->free_result();
+$db->close();
 ?>
 <nav id="nav">
     <a href="account.php">Accounts</a>
@@ -22,10 +43,10 @@ $name = $id;
 
 <main>
     <div id="accounts">
-        <h2>Accounts</h2>
+        <!-- Display database info -->
+        <h2>Account: <?php echo "$name: $accountID" ?></h2>
         <h3>Checking</h3>
-        <h3>Savings</h3>
-        <h3>Credit Card</h3>
+        <p>Balance: <?php echo $CheckingBal ?></p>
     </div>
 </main>
 
