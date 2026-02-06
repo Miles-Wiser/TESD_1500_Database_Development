@@ -1,2 +1,2 @@
-# TESD 1500 Database Development Courswork
-Each chapter folder contains the tutorials from "PHP and MySQL Web Development" by Luke Welling and Laura Thomson along with an assingment from the instructor. The assingments present a few contraints that demonstrate the material learned for the chapter.
+# TESD 1700: Server-side Web Development
+This contains all work done for the class TESD 1700. Each chapter folder holds assignments done fromt the reading material. The "Project" folder holds the ongoing assignment for the class.
